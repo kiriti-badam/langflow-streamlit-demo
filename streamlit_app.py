@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import importlib.metadata
+import logging
 import os
 from pathlib import Path
 import time
@@ -72,6 +73,7 @@ if submitted:
                 "flow_id": runtime.flow_id,
             }
         except (RuntimeError, ValueError, requests.RequestException):
+            logging.exception("Flow execution failed")
             st.error("The flow could not answer. Check the app's runtime logs and API key, then try again.")
 
 answer = st.session_state.get("last_answer")

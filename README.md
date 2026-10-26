@@ -50,3 +50,7 @@ extension packages and credentials in the hosted environment.
 MCP servers and databases are separate dependencies. Exporting a flow does not
 deploy those services or copy Langflow's database. This first demo intentionally
 uses a standalone flow so the deployment boundary is easy to see.
+
+The exported component implementations originate from the MIT-licensed
+[Langflow project](https://github.com/langflow-ai/langflow). The demo contains no
+API keys or course datasets.
