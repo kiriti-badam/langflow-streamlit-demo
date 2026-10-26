@@ -1,5 +1,9 @@
 # Perplexia: Langflow + LFX + Streamlit
 
+[Open the deployed demo](https://kiriti-perplexia.streamlit.app/). The app requires
+authorized sign-in; this source repository is public. The API key is stored only
+in Streamlit Cloud Secrets.
+
 A small deployment demo: the browser talks to Streamlit, Streamlit calls an
 authenticated LFX HTTP server, and LFX executes an exported Langflow JSON flow.
 The Langflow editor is not installed or running in the deployment.
